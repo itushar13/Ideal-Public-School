@@ -6,12 +6,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IDEAL PUBLIC SCHOOL</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Pacifico&family=Lobster&family=Orbitron:wght@500&family=Playfair+Display:wght@600&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav class="navbar sticky-top shadow-sm bg-white">
+        <div class="container-fluid d-flex justify-content-between align-items-center px-3">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="resources/logocrop.png" alt="Logo" class="nav-logo" />
+                Ideal Public School
+            </a>
+
+            <!-- Desktop Nav Buttons -->
+            <div class="d-none d-lg-flex gap-3">
+                <a class="nav-btn active" href="home.html">Home</a>
+                <a class="nav-btn" href="aboutus.html">About Us</a>
+                <a class="nav-btn" href="admission.html">Admission</a>
+                <a class="nav-btn" href="gallery.html">Gallery/Facilities</a>
+                <a class="nav-btn" href="contactus.html">Contact Us</a>
+            </div>
+
+            <!-- Hamburger Icon for Mobile -->
+            <button class="hamburger d-lg-none" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sidebar Navigation for Mobile -->
+    <div id="sidebar" class="sidebar">
+        <a href="home.html" class="nav-btn active">Home</a>
+        <a href="aboutus.html" class="nav-btn">About Us</a>
+        <a href="aboutus.html" class="nav-btn">Admission</a>
+        <a href="gallery.html" class="nav-btn">Gallery/Facilities</a>
+        <a href="contact.html" class="nav-btn">Contact Us</a>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Header Section -->
+
+    <div class="header-content">
+        <img src="images/logo1-removebg-preview.png" alt=":/" class="logo">
+        <h1 class="welcome">Welcome to Ideal Public School</h1>
+        <p class="mb-5 ideal-para">Empowering young minds through excellence in education</p>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-6 col-sm-12 ab-card">
+                    <div class="image-wrapper">
+                        <img src="images/imagexx.jpg" alt="x" class="about-us-image">
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="#"><i class="fab fa-facebook"></i></a> <!-- Facebook (FontAwesome icon) -->
+                                <a href="#"><i class="fab fa-x-twitter"></i></a> <!-- Twitter -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 ab-card">
+                    <div class="image-wrapper">
+                        <img src="images/image_gate4.jpg" alt="x" class="about-us-image2">
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="#"><i class="fab fa-facebook"></i></a> <!-- Facebook (FontAwesome icon) -->
+                                <a href="#"><i class="fab fa-x-twitter"></i></a> <!-- Twitter -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-12 m-auto mt-5" id="aboutUs">
+                    <h3>About Us</h3>
+                    <div class="about-us-section">
+                        <p>
+                            <strong>Ideal Public School</strong>, located on Manoharpur Road in Talheri Buzurg, is a
+                            beacon of quality
+                            education in the region. We are committed to nurturing young minds through a balanced blend
+                            of academics,
+                            values, and life skills.
+                        </p>
+                        <p>
+                            With a student-centered approach, our school offers a safe and inspiring environment where
+                            children are
+                            encouraged to explore, question, and grow into responsible global citizens. Our dedicated
+                            faculty, modern
+                            infrastructure, and emphasis on holistic development ensure that every child receives the
+                            attention and
+                            resources they deserve.
+                        </p>
+                        <p>
+                            At Ideal Public School, we believe in shaping not just successful students, but well-rounded
+                            individuals
+                            equipped to face the challenges of tomorrow with confidence and integrity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- carousel -->
+
+    <div id="schoolCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/image_3.jpg" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="ca-h5">-- Quality Education --</h5>
+                    <p>Empowering students to reach their full potential.</p>
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <img src="images/image_1.jpg" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="ca-h5">-- Holistic Development --</h5>
+                    <p>Where learning goes beyond textbooks.</p>
+                </div>
+            </div>
+            <div class=" carousel-item">
+                <img src="images/image_10.jpg" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="ca-h5">-- Modern Infrastructure --</h5>
+                    <p>Classrooms, labs, and co-curricular excellence.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#schoolCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#schoolCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
     <div class="outercontainer">
         <div class="innercontainer">
             <!-- Updates Section -->
@@ -22,11 +171,13 @@
                     <div class="scroll-content">
                         <button class="updates-box" onclick="">Holiday Homework 2025</button>
                         <button class="updates-box" onclick="">SYLLABUS FOR CLASSES I TO XII</button>
-                        <button class="updates-box" onclick="">BOOK LIST FOR THE YEAR 2025-26 (CLASSES I to X)</button>
+                        <button class="updates-box" onclick="">BOOK LIST FOR THE YEAR 2025-26 (CLASSES I to
+                            X)</button>
                         <!-- Duplicate for infinite scroll effect -->
                         <button class="updates-box" onclick="">Holiday Homework 2025</button>
                         <button class="updates-box" onclick="">SYLLABUS FOR CLASSES I TO XII</button>
-                        <button class="updates-box" onclick="">BOOK LIST FOR THE YEAR 2025-26 (CLASSES I to X)</button>
+                        <button class="updates-box" onclick="">BOOK LIST FOR THE YEAR 2025-26 (CLASSES I to
+                            X)</button>
                     </div>
                 </div>
             </div>
@@ -171,6 +322,13 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
