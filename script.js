@@ -1,21 +1,6 @@
 
-const hamburger = document.getElementById("hamburger");
-const sidebar = document.getElementById("sidebar");
-const overlay = document.getElementById("overlay");
-
-hamburger.addEventListener("click", () => {
-    sidebar.classList.toggle("open");
-    overlay.classList.toggle("active");
-    hamburger.classList.toggle("open");
-});
-
-overlay.addEventListener("click", () => {
-    sidebar.classList.remove("open");
-    overlay.classList.remove("active");
-    hamburger.classList.remove("open");
-});
-
 document.addEventListener("DOMContentLoaded", () => {
+    // === Gallery Modal Script ===
     const modal = document.getElementById("imageModal");
     const modalImage = document.getElementById("modalImage");
     const images = Array.from(document.querySelectorAll(".gallery-img"));
@@ -45,12 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
         img.addEventListener("dblclick", () => openModal(index));
     });
 
-    document.getElementById("prevBtn").addEventListener("click", showPrev);
-    document.getElementById("nextBtn").addEventListener("click", showNext);
 
-    modal.addEventListener("click", (e) => {
-        if (e.target === modal) closeModal();
-    });
-
-    window.closeModal = closeModal;
 });
+
