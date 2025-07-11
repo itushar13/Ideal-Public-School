@@ -4,6 +4,12 @@ body {
     overflow-x: hidden;
 }
 
+body {
+    margin: 0;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    overflow-x: hidden;
+}
+
 .navbar {
     background-color: beige !important;
     border-bottom: 2px solid maroon;
@@ -141,6 +147,7 @@ body {
     }
 }
 
+
 /* header content css starts */
 
 .header-content {
@@ -154,12 +161,11 @@ body {
     border-color: beige;
     border-style: solid;
 
-
 }
 
 /* Logo */
 .nav-logo {
-    width: 0px;
+    width: 90px;
     height: 90px;
     object-fit: cover;
     margin-right: 10px;
@@ -249,7 +255,7 @@ body {
     transform: scale(1.05);
 }
 
-.overlay {
+.overlay1 {
     position: absolute;
     top: 0;
     left: 0;
@@ -263,7 +269,7 @@ body {
     transition: opacity 0.4s ease-in-out;
 }
 
-.image-wrapper:hover .overlay {
+.image-wrapper:hover .overlay1 {
     opacity: 1;
 }
 
@@ -315,17 +321,7 @@ body {
 
 
 
-
-
 /* /carousel css */
-#schoolCarousel {
-    width: 95%;
-    margin: 0 auto;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-}
-
 .carousel-caption {
     font-size: large;
     backdrop-filter: blur(4px);
@@ -337,7 +333,6 @@ body {
     min-height: 60vh;
     object-fit: cover;
     width: 100%;
-    border-radius: 10px;
 }
 
 .ca-h5 {
@@ -365,9 +360,7 @@ body {
 
 
 
-/* Gallery and update section */
 .outercontainer {
-
     border-radius: 10px;
     margin: 20px;
 }
@@ -482,7 +475,6 @@ h2 {
     }
 }
 
-/* Updates Section */
 .updates-box {
     background-color: maroon;
     color: white;
@@ -533,29 +525,22 @@ h2 {
     }
 }
 
-
-
-/* principal section */
-
 .principal-section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-
     gap: 30px;
     max-width: 1220px;
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 10px;
     margin-top: 20px;
-
 }
 
 .principal-content {
     flex: 1;
     min-width: 300px;
-
     font-family: Arial, sans-serif;
 }
 
@@ -563,22 +548,18 @@ h2 {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
-
 }
 
 .principal-content p {
     font-size: 16px;
     line-height: 1.7;
     margin-bottom: 20px;
-
 }
-
 
 .principal-image {
     flex: 1;
     min-width: 300px;
     text-align: center;
-
 }
 
 .principal-image img {
@@ -588,7 +569,6 @@ h2 {
     border-radius: 12px;
 }
 
-/* Responsive for mobile */
 @media (max-width: 768px) {
     .principal-section {
         flex-direction: column;
@@ -601,10 +581,8 @@ h2 {
     }
 }
 
-/* recent activity */
 .psa {
     padding: 40px 20px;
-
     border-radius: 10px;
     margin-left: 20px;
     margin-right: 20px;
@@ -612,7 +590,6 @@ h2 {
     max-width: 1220px;
 }
 
-/* Flex layout */
 .psap {
     display: flex;
     flex-wrap: wrap;
@@ -621,7 +598,6 @@ h2 {
     max-width: 1200px;
     margin: auto;
     gap: 30px;
-
 }
 
 #sn {
@@ -632,18 +608,15 @@ h2 {
     font-size: 25px;
 }
 
-/* Text Section */
 .psa-text {
     flex: 1;
     min-width: 300px;
     font-family: Arial, sans-serif;
-
 }
 
 .psa-text p {
     margin-bottom: 15px;
     font-size: 16px;
-
 }
 
 .text {
@@ -666,7 +639,6 @@ h2 {
     background-color: #b71c1c;
 }
 
-/* Image Section */
 .psaimg {
     flex: 1;
     min-width: 300px;
@@ -679,7 +651,6 @@ h2 {
     border-radius: 10px;
 }
 
-/* Responsive for phones */
 @media (max-width: 768px) {
     .psap {
         flex-direction: column;
@@ -692,15 +663,10 @@ h2 {
     }
 }
 
-
-
-
-/* Footer start */
 .footer {
     color: #999999;
     border-radius: 10px;
-    max-width: 1260px;
-
+    max-width: auto;
 }
 
 .footer .btn.btn-link {

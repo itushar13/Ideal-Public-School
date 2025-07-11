@@ -4,6 +4,145 @@ body {
     overflow-x: hidden;
 }
 
+.navbar {
+    background-color: beige !important;
+    border-bottom: 2px solid maroon;
+    border-top: 2px solid maroon;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: maroon !important;
+    margin-left: 8px;
+}
+
+/* Logo */
+.nav-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin-right: 10px;
+    padding: 4px;
+}
+
+/* Navigation buttons */
+.nav-btn {
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    color: #1e1e1e;
+    border-radius: 24px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.nav-btn:hover {
+    background-color: maroon;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 2px 5px maroon;
+}
+
+.nav-btn.active {
+    background-color: maroon;
+    color: white;
+    font-weight: bold;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px maroon;
+}
+
+/* Hamburger button */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background: #333;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(4px, 4px);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Sidebar menu (mobile only) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 260px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.15);
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: right 0.3s ease;
+    z-index: 1050;
+}
+
+.sidebar.open {
+    right: 0;
+}
+
+/* Dark overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 1040;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* Show hamburger + sidebar only on small screens */
+@media (max-width: 991.98px) {
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Hide sidebar and overlay on large screens */
+@media (min-width: 992px) {
+
+    .sidebar,
+    .overlay {
+        display: none !important;
+    }
+}
+
+
+
 .admission {
 
     padding: 20px;
@@ -66,7 +205,7 @@ body {
 .footer {
     color: #999999;
     border-radius: 10px;
-    max-width: 1260px;
+    max-width: auto;
     margin-top: 0;
 
 }

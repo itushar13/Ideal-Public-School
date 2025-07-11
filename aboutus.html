@@ -13,6 +13,45 @@
 
 <body>
 
+
+    <!-- Navbar -->
+    <nav class="navbar sticky-top shadow-sm ">
+        <div class="container-fluid d-flex justify-content-between align-items-center px-3">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="resources/logocrop.png" alt="Logo" class="nav-logo" />
+                Ideal Public School
+            </a>
+
+            <!-- Desktop Nav Buttons -->
+            <div class="d-none d-lg-flex gap-3">
+                <a class="nav-btn active" href="home.html">Home</a>
+                <a class="nav-btn" href="aboutus.html">About Us</a>
+                <a class="nav-btn" href="admission.html">Admission</a>
+                <a class="nav-btn" href="gallery.html">Gallery</a>
+                <a class="nav-btn" href="contactus.html">Contact Us</a>
+            </div>
+
+            <!-- Hamburger Icon for Mobile -->
+            <button class="hamburger d-lg-none" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sidebar Navigation for Mobile -->
+    <div id="sidebar" class="sidebar">
+        <a href="home.html" class="nav-btn active">Home</a>
+        <a href="aboutus.html" class="nav-btn">About Us</a>
+        <a href="aboutus.html" class="nav-btn">Admission</a>
+        <a href="gallery.html" class="nav-btn">Gallery/Facilities</a>
+        <a href="contact.html" class="nav-btn">Contact Us</a>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+
     <div class="container-fluid school-banner text-center">
 
         <div class="container-fluid page-header">
@@ -145,7 +184,7 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="script.js"></script>
 
 
 </body>
