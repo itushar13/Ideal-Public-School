@@ -145,10 +145,10 @@ body {
 
 
 .page-header {
-    background: url('resources/bgimg4.jpg') center center / cover no-repeat;
+    background: url('resources/aboutus6.jpg') center center / cover no-repeat;
     position: relative;
     padding: 100px 0;
-    color: white;
+    color: maroon;
     border-radius: 10px;
 }
 

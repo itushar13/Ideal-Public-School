@@ -1,75 +1,136 @@
-.header-content h1 {
-  font-size: 2.2rem;
-}
-
-.header-content p {
-  font-size: 1rem;
-}
-
-.logo {
-
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  margin-top: 5px;
-  margin-bottom: 25px;
-  z-index: 1;
-  position: relative;
-  backdrop-filter: blur(10px);
-  border-radius: 50%;
-  padding: 10px;
+ @media (min-width: 993px) {
 
 
+   .logo {
 
-}
-
-
-@keyframes bg-animation {
-
-  0% {
-
-    background-position: left;
-
-  }
-
-  100% {
-
-    background-position: right;
-  }
-}
-
-@keyframes rotateBackForth {
-
-  0% {
-    transform: rotate(-4deg);
-    background-color: rgb(255, 0, 0);
-  }
-
-  100% {
-    transform: rotate(4deg);
-  }
+     width: 200px;
+     height: 200px;
+     object-fit: cover;
+     margin-top: 5px;
+     margin-bottom: 25px;
+     z-index: 1;
+     position: relative;
+     backdrop-filter: blur(10px);
+     border-radius: 50%;
+     padding: 10px;
 
 
-}
+   }
 
-@keyframes slideText {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
+   .nav-span {
+     transition: 0.3s ease;
+   }
 
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
+   .nav-span:hover {
 
-@keyframes rotatebackForth {
-  0% {
-    transform: rotate(-12deg);
-  }
+     color: rgb(255, 255, 255) !important;
+     background-color: maroon;
+     border-radius: 5px;
+     border-style: none;
+     padding: 8px;
+     padding-left: 14px;
+     padding-right: 14px;
+     transform: scale(1.03);
 
-  100% {
-    transform: rotate(12deg);
-  }
-}
+   }
+
+
+ }
+
+ @media (max-width: 992px) {
+   .navbar-brand {
+     font-size: 1.4rem;
+   }
+
+   .nav-span {
+     transition: 0.3s ease;
+   }
+
+   .nav-span:hover {
+
+     color: beige !important;
+     background-color: maroon;
+     border-radius: 5px;
+     border-style: none;
+     padding: 10px;
+     padding-left: 14px;
+     padding-right: 14px;
+     transform: scale(1.03);
+
+   }
+
+   .header-content h1 {
+     font-size: 2.2rem;
+   }
+
+   .header-content p {
+     font-size: 1rem;
+   }
+
+   .logo {
+
+     width: 180px;
+     height: 180px;
+     object-fit: cover;
+     margin-top: 5px;
+     margin-bottom: 25px;
+     z-index: 1;
+     position: relative;
+     backdrop-filter: blur(10px);
+     border-radius: 50%;
+     padding: 10px;
+
+
+
+   }
+ }
+
+ @keyframes bg-animation {
+
+   0% {
+
+     background-position: left;
+
+   }
+
+   100% {
+
+     background-position: right;
+   }
+ }
+
+ @keyframes rotateBackForth {
+
+   0% {
+     transform: rotate(-4deg);
+     background-color: rgb(255, 0, 0);
+   }
+
+   100% {
+     transform: rotate(4deg);
+   }
+
+
+ }
+
+ @keyframes slideText {
+   0% {
+     transform: translateX(-100%);
+     opacity: 0;
+   }
+
+   100% {
+     transform: translateX(0);
+     opacity: 1;
+   }
+ }
+
+ @keyframes rotatebackForth {
+   0% {
+     transform: rotate(-12deg);
+   }
+
+   100% {
+     transform: rotate(12deg);
+   }
+ }
