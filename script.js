@@ -64,5 +64,12 @@ document.addEventListener("DOMContentLoaded", () => {
         overlay.classList.remove("active");
         hamburger.classList.remove("open");
         document.body.classList.remove("sidebar-open");
+
+        window.sidebarNavClose = function sidebarNavClose() {
+            sidebar.classList.remove("open");
+            overlay.classList.remove("active");
+            hamburger.classList.remove("open");
+            document.body.classList.remove("sidebar-open");
+        };
     }
 });

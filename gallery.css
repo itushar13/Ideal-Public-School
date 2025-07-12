@@ -9,6 +9,9 @@ body {
     background-color: beige !important;
     border-bottom: 2px solid maroon;
     border-top: 2px solid maroon;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
 }
 
 /* Navbar Brand */
@@ -151,6 +154,9 @@ body {
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 0;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
 
 }
 
@@ -215,6 +221,9 @@ body {
     border-radius: 10px;
     max-width: auto;
     margin-top: 0;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
 
 }
 

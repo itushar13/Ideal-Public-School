@@ -9,6 +9,10 @@ body {
     background-color: beige !important;
     border-bottom: 2px solid maroon;
     border-top: 2px solid maroon;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+
 }
 
 /* Navbar Brand */
@@ -164,6 +168,15 @@ body {
     border-radius: 10px;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1920px;
+    margin: 20px auto 0 auto;
+    /* This centers it horizontally */
+    border-radius: 10px;
 
 
 }
@@ -188,8 +201,9 @@ body {
 
 
 img {
-    height: 90%;
-    width: 90%;
+    height: 500px;
+    width: 700px;
+
     border-radius: 10px;
 
 }
@@ -232,6 +246,8 @@ img {
     border-radius: 10px;
     max-width: auto;
     margin-top: 0;
+    max-width: 1920px;
+
 
 }
 
@@ -274,9 +290,4 @@ img {
     .footer img {
         max-width: 50%;
     }
-}
-
-.q-link {
-
-    margin-right: 0px !important;
 }
