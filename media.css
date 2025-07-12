@@ -99,19 +99,7 @@
    }
  }
 
- @keyframes rotateBackForth {
 
-   0% {
-     transform: rotate(-4deg);
-     background-color: rgb(255, 0, 0);
-   }
-
-   100% {
-     transform: rotate(4deg);
-   }
-
-
- }
 
  @keyframes slideText {
    0% {
@@ -125,12 +113,26 @@
    }
  }
 
- @keyframes rotatebackForth {
+ @keyframes slideText2 {
    0% {
-     transform: rotate(-12deg);
+     transform: translateX(100%);
+     opacity: 0;
    }
 
    100% {
-     transform: rotate(12deg);
+     transform: translateX(0);
+     opacity: 1;
+   }
+ }
+
+ @keyframes slideText3 {
+   0% {
+     transform: translateX(100%);
+     opacity: 0;
+   }
+
+   100% {
+     transform: translateX(0);
+     opacity: 1;
    }
  }

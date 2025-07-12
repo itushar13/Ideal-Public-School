@@ -162,45 +162,51 @@ body {
     max-width: 1920px;
     margin: 0 auto;
     position: relative;
+    padding-top: 0 !important;
+
 
 }
 
 /* Logo */
-.nav-logo {
-    width: 90px;
-    height: 90px;
+.logo {
+    width: 70px;
+    height: 70px;
     object-fit: cover;
     margin-right: 10px;
     padding: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0 !important;
+    margin-top: 2px !important;
+
+
 }
 
 .header-content h1 {
     padding-top: 10px;
     color: rgb(255, 255, 255);
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     padding: 18px;
-    border-radius: 50px;
-    border-style: solid;
-    border-width: 7px;
-    border-color: #000000;
-    background-color: maroon;
-    background-image: conic-gradient(from 150deg at 50% 30%,
-            beige 60deg,
-            transparent 60deg);
-    /* chod bhai tere bski ni smjhna css */
     background-size: .2rem .2rem;
     transition: 3s ease;
-    margin-bottom: 5px;
     z-index: 1;
     position: relative;
+    animation: slideText 2s ease-out forwards;
+    will-change: transform, opacity;
+    /* optimize performance */
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 
 }
 
 .header-content h1:hover {
 
-    background-color: blue;
-    animation: rotateBackForth 1.3s infinite alternate ease-in-out;
+
+
+    transform: scale(1.05);
 
 }
 
@@ -209,8 +215,9 @@ body {
     font-family: 'Lobster', cursive;
     word-spacing: 5px;
     font-weight: 100;
-    animation: slideText 2s ease-out forwards;
-    background-image: linear-gradient(90deg, maroon, beige);
+    animation: slideText2 2s ease-out forwards;
+    margin-top: 0 !important;
+
 
 }
 
@@ -243,9 +250,23 @@ body {
     height: 100%;
     border-radius: 6px;
     overflow: hidden;
+    animation: slideText 2s ease-out forwards;
 }
 
-.image-wrapper img {
+.image-wrapper1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    animation: slideText2 2s ease-out forwards;
+
+
+}
+
+.image-wrapper,
+.image-wrapper1,
+img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -254,6 +275,10 @@ body {
 }
 
 .image-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+.image-wrapper1:hover img {
     transform: scale(1.05);
 }
 
@@ -272,6 +297,10 @@ body {
 }
 
 .image-wrapper:hover .overlay1 {
+    opacity: 1;
+}
+
+.image-wrapper1:hover .overlay1 {
     opacity: 1;
 }
 
