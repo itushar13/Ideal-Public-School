@@ -168,13 +168,13 @@ body {
     border-radius: 10px;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
+
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 
     max-width: 1920px;
-    margin: 20px auto 0 auto;
+
     /* This centers it horizontally */
     border-radius: 10px;
 
