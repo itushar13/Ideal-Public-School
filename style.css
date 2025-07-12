@@ -14,6 +14,14 @@ body {
 
 }
 
+.nav1 {
+    animation: slideText2 2s ease-out forwards;
+}
+
+.logo1 {
+    animation: slideText 2s ease-out forwards;
+}
+
 /* Navbar Brand */
 .navbar-brand {
     font-size: 1.6rem;
@@ -154,11 +162,8 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('resources/tuyen-vo-7o7DqXJArf4-unsplash.jpg') no-repeat center center/cover;
     color: white;
     height: 100%;
-    border-style: none;
-    border-width: 10px;
-    border-color: beige;
-    border-style: solid;
-    border-radius: 10px;
+    width: 100%;
+
     max-width: 1920px;
     margin: 0 auto;
     position: relative;
@@ -203,8 +208,6 @@ body {
 }
 
 .header-content h1:hover {
-
-
 
     transform: scale(1.05);
 
@@ -462,6 +465,11 @@ h2 {
     border-radius: 5px;
     object-fit: cover;
     height: 120px;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 .modal {
