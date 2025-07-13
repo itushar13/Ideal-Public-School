@@ -23,8 +23,8 @@ body {
 
 /* Logo */
 .nav-logo {
-    width: 90px;
-    height: 90px;
+    width: 75px;
+    height: 75px;
     object-fit: cover;
     margin-right: 10px;
     padding: 4px;
@@ -212,10 +212,8 @@ body {
     color: #999999;
     border-radius: 10px;
     max-width: auto;
-    margin-top: 0;
     max-width: 1920px;
-
-    position: relative;
+    margin-top: 0;
 
 }
 
@@ -260,10 +258,8 @@ body {
     }
 }
 
-.q-link {
 
-    margin-right: 0px !important;
-}
+
 
 /* Footer copyright section */
 .copyright {
@@ -271,8 +267,9 @@ body {
     color: white;
 
     font-size: 14px;
-
+    padding-top: 20px;
     padding-bottom: 20px;
+    border-top: 1px solid black;
 
 }
 
@@ -281,6 +278,7 @@ body {
     /* gold/yellow contrast */
     text-decoration: none;
     font-weight: 500;
+
 }
 
 
