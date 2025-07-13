@@ -264,3 +264,29 @@ body {
 
     margin-right: 0px !important;
 }
+
+/* Footer copyright section */
+.copyright {
+
+    color: white;
+
+    font-size: 14px;
+
+    padding-bottom: 20px;
+
+}
+
+.copyright a {
+
+    /* gold/yellow contrast */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+
+@media (max-width: 768px) {
+    .copyright {
+        text-align: center;
+    }
+}
