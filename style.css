@@ -355,6 +355,19 @@ img {
     padding-bottom: 10px;
 }
 
+.button-about-us {
+    background-color: beige !important;
+    transition: background 0.2s ease-out;
+    color: black;
+    border: maroon solid 2px !important;
+}
+
+.button-about-us:hover {
+    color: white !important;
+    background: maroon !important;
+    transform: scale(1.02);
+
+}
 
 
 /* /carousel css */
