@@ -1,2 +1,2 @@
 # Ideal-Public-School
-School website ( maroom and beige theme)
+School website ( maroon and beige theme)
